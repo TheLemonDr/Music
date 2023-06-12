@@ -12,11 +12,12 @@ body {
 button {
     color: white;
     background-color: rgb(58, 56, 56);
-    padding: 24 10;
+    padding: 10 24;
     border: 8px;
     border-radius: 8px;
     border-color: white;
-    transition: background-color linear 3s;
+    cursor: pointer;
+    transition: background-color linear 2s;
 }
 
 button:hover {
