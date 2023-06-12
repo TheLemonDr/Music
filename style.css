@@ -1,0 +1,24 @@
+body {
+    background-color:  rgb(77, 75, 75);
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+.button {
+    display: flex;
+}
+
+button {
+    color: white;
+    background-color: rgb(58, 56, 56);
+    padding: 24 10;
+    border: 8px;
+    border-radius: 8px;
+    border-color: white;
+    transition: background-color linear 3s;
+}
+
+button:hover {
+    background-color: rgb(77, 75, 75);
+}

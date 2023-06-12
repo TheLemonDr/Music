@@ -1,1 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Goofy Ahh Playlist</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/music-note-icon-vector-illustration.jpg"
+</head>
+<body>
+    <center>
+        <h1>Welcome to the Goofy Ahh Playlist!</h1>
+        <br>
+        <h3>Filters</h3>
+        <div class="button">
+            <button onclick="all()">All</button>
+            <button onclick="goofy()">Goofy Ahh</button>
+            <button onclick="dark()">Dark Songs</button>
+        </div>
 
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="vids">
+            <h4>Satan GF Song</h4>
+            <video class="goofy" src="assets/AutoMemes (2).mp4" height="250" width="500" controls loop></video>
+            <br>
+            <br>
+            <h4>KYS Song</h4>
+            <video class="goofy" src="assets/Be happy!.mp4" height="250" width="500" controls loop></video>
+            <br>
+            <br>
+            <h4>Chuck Norris when...</h4>
+            <video class="goofy" src="assets/Chuck Norris when this man walks in . . ..mp4" height="250" width="500" controls loop></video>
+            <br>
+            <br>
+            <h4>Flyin'</h4>
+            <video class="dark" src="assets/Flyin'.mp4" height="250" width="500" controls loop></video>
+            <br>
+            <br>
+            <h4>Great Value™ GhostFighters</h4>
+            <video class="goofy" src="assets/Ghostfighters.mp4" height="250" width="500" controls loop></video>
+            <br>
+            <br>
+            <h4>Lalala (Kahoot Remix)</h4>
+            <video class="goofy" src="assets/Lalala - bbno$ & Y2K (Kahoot Remix).mp4" height="250" width="500" controls loop></video>
+            <br>
+            <br>
+            <h4>I'm Gonna Fly Some Planes</h4>
+            <video class="dark" src="assets/My favorite song.mp4" height="250" width="500" controls loop></video>
+            <br>
+            <br>
+            <h4>Super Mario Bros Condom Trumpet</h4>
+            <video class="goofy" src="assets/Playing Super Mario Bros on the trumpet!.mp4" height="250" width="500" controls loop></video>
+            <br>
+            <br>
+            <h4>Dick's Pizza</h4>
+            <video class="goofy" src="assets/Richards Pizza.mp4" height="250" width="500" controls loop></video>
+            <br>
+            <br>
+            <h4>Soviet Union (Mario Version)</h4>
+            <video class="dark" src="assets/Super Mario Movie reaction!.mp4" height="250" width="500" controls loop></video>
+            <br>
+            <br>
+            <h4>Mood (Hitler Remix)</h4>
+            <video class="dark" src="assets/Hitler-_I_am_always_mean_to_jews_online-video-cutter.com.mp4" height="250" width="500" controls loop></video>
+            <br>
+            <br>
+        </div>
+    </center>
+
+    <script>
+
+        function all() {
+            document.getElementsByClassName('goofy').style.display = 'block';
+            document.getElementsByClassName('dark').style.display = 'block';
+        }
+
+        function goofy() {
+            document.getElementsByClassName('goofy').style.display = 'block';
+            document.getElementsByClassName('dark').style.display = 'none';
+        }
+
+        function dark() {
+            document.getElementsByClassName('dark').style.display = 'block';
+            document.getElementsByClassName('goofy').style.display = 'none';
+        }
+
+    </script>
+</body>
+</html>
