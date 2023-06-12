@@ -13,9 +13,9 @@
         <br>
         <h3>Filters</h3>
         <div class="button">
-            <button onclick="all()">All</button>
-            <button onclick="goofy()">Goofy Ahh</button>
-            <button onclick="dark()">Dark Songs</button>
+            <button class="all">show all</button>
+            <button class="b">b</button>
+            <button class="c">c</button>
         </div>
 
         <br>
@@ -72,22 +72,44 @@
     </center>
 
     <script>
-
-        function all() {
-            document.getElementsByClassName('goofy').style.display = 'block';
-            document.getElementsByClassName('dark').style.display = 'block';
+        let btnA = document.querySelector(".all");
+        let btnB = document.querySelector(".b");
+        let btnC = document.querySelector(".c");
+  
+        function showAll() {
+          let elements = document.querySelectorAll(".goofy, .dark");
+          for (let i = 0; i < elements.length; i++) {
+            elements[i].style.display = "block";
+          }
         }
-
+  
         function goofy() {
-            document.getElementsByClassName('goofy').style.display = 'block';
-            document.getElementsByClassName('dark').style.display = 'none';
+          let elements = document.querySelectorAll(".goofy");
+          for (let i = 0; i < elements.length; i++) {
+            elements[i].style.display = "block";
+          }
+  
+          elements = document.querySelectorAll(".dark");
+          for (let i = 0; i < elements.length; i++) {
+            elements[i].style.display = "none";
+          }
         }
-
+  
         function dark() {
-            document.getElementsByClassName('dark').style.display = 'block';
-            document.getElementsByClassName('goofy').style.display = 'none';
+          let elements = document.querySelectorAll(".dark");
+          for (let i = 0; i < elements.length; i++) {
+            elements[i].style.display = "block";
+          }
+  
+          elements = document.querySelectorAll(".goofy");
+          for (let i = 0; i < elements.length; i++) {
+            elements[i].style.display = "none";
+          }
         }
-
-    </script>
+  
+        btnA.addEventListener("click", showAll);
+        btnB.addEventListener("click", goofy);
+        btnC.addEventListener("click", dark);
+      </script>
 </body>
 </html>
