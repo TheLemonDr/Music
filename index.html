@@ -9,6 +9,7 @@
     <meta name="description" content="The Boys Personal Music Playlist - Made by Dr. Lemon">
 </head>
 <body>
+    <img src="assets/john.png" height="100" width="100" class="john">
     <center>
         <h1>Welcome to the Goofy Ahh Playlist!</h1>
         <br>
@@ -86,50 +87,50 @@
     <br>
 
     <script>
-        let btnA = document.querySelector(".all");
-        let btnB = document.querySelector(".b");
-        let btnC = document.querySelector(".c");
-  
-        function showAll() {
-          let elements = document.querySelectorAll(".goofy, .dark");
-          for (let i = 0; i < elements.length; i++) {
-            elements[i].style.display = "block";
-          }
-          document.title = "The Goofy Ahh Playlist"
-          document.body.style.backgroundColor = "initial"
+      let btnA = document.querySelector(".all");
+      let btnB = document.querySelector(".b");
+      let btnC = document.querySelector(".c");
+
+      function showAll() {
+        let elements = document.querySelectorAll(".goofy, .dark");
+        for (let i = 0; i < elements.length; i++) {
+          elements[i].style.display = "block";
         }
-  
-        function goofy() {
-          let elements = document.querySelectorAll(".goofy");
-          for (let i = 0; i < elements.length; i++) {
-            elements[i].style.display = "block";
-          }
-  
-          elements = document.querySelectorAll(".dark");
-          for (let i = 0; i < elements.length; i++) {
-            elements[i].style.display = "none";
-          }
-          document.title = "The Goofy Ahh Playlist"
-          document.body.style.backgroundColor = "initial"
+        document.title = "The Goofy Ahh Playlist";
+        document.body.style.backgroundColor = "rgb(77, 75, 75)";
+      }
+
+      function goofy() {
+        let elements = document.querySelectorAll(".goofy");
+        for (let i = 0; i < elements.length; i++) {
+          elements[i].style.display = "block";
         }
-  
-        function dark() {
-          let elements = document.querySelectorAll(".dark");
-          for (let i = 0; i < elements.length; i++) {
-            elements[i].style.display = "block";
-          }
-  
-          elements = document.querySelectorAll(".goofy");
-          for (let i = 0; i < elements.length; i++) {
-            elements[i].style.display = "none";
-          }
-          document.title = "DARK MODE ACTIVATED!"
-          document.body.style.backgroundColor = "black"
+
+        elements = document.querySelectorAll(".dark");
+        for (let i = 0; i < elements.length; i++) {
+          elements[i].style.display = "none";
         }
-  
-        btnA.addEventListener("click", showAll);
-        btnB.addEventListener("click", goofy);
-        btnC.addEventListener("click", dark);
+        document.title = "The Goofy Ahh Playlist";
+        document.body.style.backgroundColor = "rgb(77, 75, 75)";
+      }
+
+      function dark() {
+        let elements = document.querySelectorAll(".dark");
+        for (let i = 0; i < elements.length; i++) {
+          elements[i].style.display = "block";
+        }
+
+        elements = document.querySelectorAll(".goofy");
+        for (let i = 0; i < elements.length; i++) {
+          elements[i].style.display = "none";
+        }
+        document.title = "DARK MODE ACTIVATED!";
+        document.body.style.backgroundColor = "black";
+      }
+
+      btnA.addEventListener("click", showAll);
+      btnB.addEventListener("click", goofy);
+      btnC.addEventListener("click", dark);
       </script>
 
       <footer>
